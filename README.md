@@ -1,39 +1,60 @@
-# Python API Homework - What's the Weather Like?
+# Python API Project 
 
 ## Background
 
-Utilizes weather data from OpenWeather to find a correlation between various variables. Uses Google Maps API to find ideal vacation hotels based on set weather.
+### WeatherPy: Utilizes weather data from OpenWeather API to find a correlation between various variables. 
+
+### VacationPy: Uses Google Maps API to find ideal vacation hotels based on set weather.
 
 ## Part I - WeatherPy
 
-Scatter Plots: 
+[WeatherPy Script](/WeatherPy/WeatherPy.ipynb)
+
+### Scatter Plots
 
 * Temperature (F) vs. Latitude
+<img src="/WeatherPy/City Latitude vs Max Temp.png" alt="My cool logo"/>
 * Humidity (%) vs. Latitude
+<img src="/WeatherPy/City Latitude vs Humidity.png" alt="My cool logo"/>
+
 * Cloudiness (%) vs. Latitude
+<img src="/WeatherPy/City Latitude vs Cloudiness.png" alt="My cool logo"/>
+
 * Wind Speed (mph) vs. Latitude
+<img src="/WeatherPy/City Latitude vs Windspeed.png" alt="My cool logo"/>
 
-After each plot, add a sentence or two explaining what the code is analyzing.
-
-The second requirement is to run linear regression on each relationship. This time, separate the plots into Northern Hemisphere (greater than or equal to 0 degrees latitude) and Southern Hemisphere (less than 0 degrees latitude):
+### Linear Regressions
 
 * Northern Hemisphere - Temperature (F) vs. Latitude
+<img src="/WeatherPy/NorthHemisphere_Regression_MaxTemp.png" alt="My cool logo"/>
+
 * Southern Hemisphere - Temperature (F) vs. Latitude
+<img src="/WeatherPy/SouthHemisphere_Regression_MaxTemp.png" alt="My cool logo"/>
+
 * Northern Hemisphere - Humidity (%) vs. Latitude
+<img src="/WeatherPy/NorthHemisphere_Regression_Humidity.png" alt="My cool logo"/>
+
 * Southern Hemisphere - Humidity (%) vs. Latitude
+<img src="/WeatherPy/SouthHemisphere_Regression_Humidity.png" alt="My cool logo"/>
+
 * Northern Hemisphere - Cloudiness (%) vs. Latitude
+<img src="/WeatherPy/NorthHemisphere_Regression_Cloudiness.png" alt="My cool logo"/>
+
 * Southern Hemisphere - Cloudiness (%) vs. Latitude
+<img src="/WeatherPy/SouthHemisphere_Regression_Cloudiness.png" alt="My cool logo"/>
 * Northern Hemisphere - Wind Speed (mph) vs. Latitude
+<img src="/WeatherPy/NorthHemisphere_Regression_Windspeed.png" alt="My cool logo"/>
 * Southern Hemisphere - Wind Speed (mph) vs. Latitude
+<img src="/WeatherPy/SouthHemisphere_Regression_Windspeed.png" alt="My cool logo"/>
 
-After each pair of plots, take the time to explain what the linear regression is modeling. For example, describe any relationships you notice and any other analysis you may have.
+## Observations: 
 
-Your final notebook must:
+1) According to the "Southern Hemisphere - City Latitude vs. Windspeed" linear regression, there appears to be a negative correlation between latitude and windspeed in the Souther Hemisphere cities.
 
-* Randomly select **at least** 500 unique (non-repeat) cities based on latitude and longitude.
-* Perform a weather check on each of the cities using a series of successive API calls.
-* Include a print log of each city as it's being processed with the city number and city name.
-* Save a CSV of all retrieved data and a PNG image for each scatter plot.
+2) There is a negative correlation between City Latitude and Max Temperature for cities in the Northern Hemisphere.
+
+3) There appears to be a positive correlation between City Latitude and Cloudiness in the Northern Hemisphere.
+
 
 ### Part II - VacationPy
 
