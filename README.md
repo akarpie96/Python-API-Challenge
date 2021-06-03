@@ -58,7 +58,7 @@
 
 ### Part II - VacationPy
 
-[VacationPy Script]
+[VacationPy Script](/VacationPy/VacationPy.ipynb)
 
 ## Heatmap 
 
